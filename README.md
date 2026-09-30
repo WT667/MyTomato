@@ -1,4 +1,4 @@
-# TomatoCleaner
+# 我的番茄🍅
 
 三合一番茄系 App 净化 LSPosed 模块。
 
@@ -14,7 +14,7 @@
 
 1. 安装 APK
 2. LSPosed 管理器启用本模块，勾选三个目标 App 作用域
-3. 打开 TomatoCleaner 面板开关功能
+3. 打开「我的番茄」面板开关功能
 4. 强制停止目标 App 后重新打开
 
 ## 技术
