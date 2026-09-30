@@ -2,12 +2,12 @@ package com.tomatocleaner.ui;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.materialswitch.MaterialSwitch;
-import com.google.android.material.textview.MaterialTextView;
 import com.tomatocleaner.R;
 
 /**
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         swHongguoFloat.setOnCheckedChangeListener((b, v) -> save("hongguo_float", v));
 
         // 状态提示
-        MaterialTextView tvStatus = findViewById(R.id.tv_status);
+        TextView tvStatus = findViewById(R.id.tv_status);
         tvStatus.setOnClickListener(v ->
                 Toast.makeText(this, R.string.status_hint, Toast.LENGTH_LONG).show());
     }
