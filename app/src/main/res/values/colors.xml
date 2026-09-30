@@ -2,4 +2,5 @@
     <color name="md_primary">#D32F2F</color>
     <color name="md_primary_container">#FFEBEE</color>
     <color name="md_background">#FAFAFA</color>
+    <color name="icon_bg">#FDF0D5</color>
 </resources>
