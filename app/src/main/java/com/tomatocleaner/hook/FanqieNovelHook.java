@@ -130,11 +130,10 @@ public class FanqieNovelHook {
                 "j", "float-continue-ball");
 
         // 主页面悬浮窗
-        tryHook("com.dragon.read.pages.main.z",
-                "h", android.app.Activity.class, "float-main-window");
+        tryHook("com.dragon.read.pages.main.z", "h", "float-main-window");
 
         // 发帖球
-        tryHook("ma5.o", "g", boolean.class, "float-editor-ball");
+        tryHook("ma5.o", "g", "float-editor-ball");
 
         // 冷启增长悬浮条
         for (String method : new String[]{"m", "tryShowLowTakeCashFloatingView",
@@ -143,15 +142,9 @@ public class FanqieNovelHook {
         }
     }
 
-    private void tryHook(String className, String method, String logTag, Object... extraArgs) {
+    private void tryHook(String className, String method, String logTag) {
         try {
-            Class<?> cls = XposedHelpers.findClass(className, appCl);
-            Object[] args = new Object[extraArgs.length + 1];
-            args[0] = method;
-            System.arraycopy(extraArgs, 0, args, 1, extraArgs.length);
-
-            // 简化：用 findAndHookMethod 只匹配方法名
-            XposedHelpers.findAndHookMethod(cls, method, new XC_MethodHook() {
+            XposedHelpers.findAndHookMethod(className, appCl, method, new XC_MethodHook() {
                 @Override
                 protected void beforeHookedMethod(MethodHookParam param) {
                     XposedBridge.log(TAG + ": " + logTag);
