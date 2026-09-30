@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TomatoCleaner</string>
+    <string name="module_description">番茄系 App 净化模块：去广告、去金币挂件、精简 tab</string>
+    <string name="app_tagline">番茄畅听 / 番茄小说 / 红果短剧 — 三合一净化</string>
+
+    <string name="target_fanqie_listen">番茄畅听</string>
+    <string name="target_fanqie_novel">番茄免费小说</string>
+    <string name="target_hongguo">红果免费短剧</string>
+
+    <string name="feat_vip">VIP 免听破解</string>
+    <string name="feat_ad_block">去广告 / 弹窗 / 推广页</string>
+    <string name="feat_tab_clean">精简底部 tab（去掉短剧/赚钱/商城）</string>
+    <string name="feat_float_clean">去悬浮球（金币挂件/增长条/发帖球）</string>
+
+    <string name="status_hint">在 LSPosed 中启用本模块并勾选作用域，然后强制停止目标 App 再打开</string>
+</resources>
