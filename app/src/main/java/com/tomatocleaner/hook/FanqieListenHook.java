@@ -92,11 +92,11 @@ public class FanqieListenHook {
 
             setField(model, "isVip", true);
             setField(model, "freeAd", true);
-            trySetField(model, "expireTime", "2099-12-31");
+            trySetField(model, "expireTime", "6666-06-06");
             trySetField(model, "leftTime", "999999999");
             trySetField(model, "reverseVIP", true);
             trySetField(model, "freeAdLeft", 999999999L);
-            trySetField(model, "freeAdExpire", 4102444800000L);
+            trySetField(model, "freeAdExpire", 2147483647000L);
 
             patchedUserModel = model;
             vipPatched = true;
